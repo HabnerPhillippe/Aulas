@@ -2,6 +2,11 @@
     background-color: aqua;
 }
 
+/* Extra Small -> <576px */
 .breakpoints{
     color: brown;
+}
+
+/* Small -. >=576px */
+@media(min-width: 576px){
 }
