@@ -1,0 +1,88 @@
+h2 {
+    color: blue
+}
+
+h1 {
+    color: green
+}
+
+
+span{
+    color: blueviolet
+}
+
+/* comentário */
+
+/* Classes e IDS */
+
+.nome-classe{
+    color: #ffe4c4;
+}
+/* Pode usar várias vezes */
+#nome-id {
+    color: rgb(238, 129, 238)
+}
+/* Só se pode usar uma vez o id (usado mais em javascript */
+
+/* CORES - nome/exadecimal/rgb(a) */
+
+/* Estilizar o fundo */
+body{
+    background-color: #202124;
+    /* background-image:url('../img/01.jpeg');
+    background-repeat: no-repeat; /*Não repete a imagem caso seja pequena*/
+    /*background-size: cover; Fica cheia/estendida */
+}
+
+p {
+    color: #fff;
+    font-size: 36px;
+}
+
+.font-serif{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.font-sonserif{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font-monospace{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.box-model {
+    border: 3px solid #fff;
+    padding: 5px 2px 3px 7px; /*Sentido horário*/
+    border-radius: 20px;
+}
+.redondo {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 22px auto 10px;
+}
+
+
+footer{
+    background-color: aqua;
+    text-align: center;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: red;
+}
+
+footer li{
+    display: inline;
+    margin-right: 37px;
+    margin-left: 15px;
+}
+

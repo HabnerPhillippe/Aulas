@@ -1,0 +1,43 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: black;
+    height: 70%;
+    width: 35%;
+    margin: 50px auto;
+    position: relative;
+
+}
+
+.circulo {
+    background-color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 83px;
+}
+
+.divisao {
+    background-color: aliceblue;
+    width: 75%;
+    height: 20px;
+    margin: auto;
+}
+
+.botao {
+    width: 90%;
+    height: 50px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 12px;
+}

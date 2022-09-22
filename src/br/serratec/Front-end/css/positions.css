@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+}
+.container {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: blue;
+    padding: 16px;
+}
+
+.amarela {
+    background-color: yellow;
+    height: 50%;
+    width: 50%;
+}
+
+.positions {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: blue;
+    margin-bottom: 5px;
+}
+
+/* Segue o fluxo do HTML */
+/* default - padrão do html */
+.static {
+    position: static;
+}
+
+.relative {
+    background-color: aquamarine;
+    position: relative;
+    left: 35px;
+    bottom: 35px;
+}
+
+.absolute {
+    background-color: green;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    bottom: 50%;
+    left: 50%;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    bottom: 36px;
+    right: 36px;
+}
