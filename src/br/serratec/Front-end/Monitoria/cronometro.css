@@ -1,23 +1,23 @@
-body{
+body {
     background-color: #1a1a1a;
 }
 
-.container{
+.container {
     width: 300px;
     margin: auto;
-    background-color: black;
-    color: aliceblue;
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 25px;
-    margin-top: 150px;
-    border-radius: 10px;
+    margin-top: 180px;
+    border-radius: 5px;
 }
 
 #temporizador {
     font-size: 50px;
 }
 
-.grupo-botoes{
+.grupo-botoes {
     padding: 20px;
 }
 
@@ -33,7 +33,7 @@ button.btn-zerar{
     background-color: orange;
 }
 
-button{
+button {
     width: 75px;
     border: 0;
     border-radius: 4px;
@@ -41,6 +41,7 @@ button{
 }
 
 button:hover{
-    background-color: #1a1a1a;
-    color: aliceblue;
+   background-color: #1a1a1a; 
+   color: #fff;
+   cursor: pointer;
 }
