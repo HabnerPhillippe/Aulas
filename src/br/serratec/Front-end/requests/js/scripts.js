@@ -177,7 +177,7 @@ console.log(users[0].nome)
 console.log(users[1].frutasPreferidas[0])
 
 
-// Crie um arry de objetos para uma lista de contatos 
+// Crie um array de objetos para uma lista de contatos 
 // cada contato deve ter nome, celular, email, data de nascimento
 // crie 3 contatos diferentes
 
@@ -228,3 +228,60 @@ console.log(numerosPares)
 
 const nomeComH = contatos.filter(contato => contato.nome[0] == "H" || contato.nome[0] == "h")
 console.log(nomeComH);
+
+// Requisições -> Funções Assíncronas
+
+// const url = "https://jsonplaceholder.typicode.com/users"
+
+//  const getDate = async () => {
+//     const response = await fetch(url);
+//      const dados = await response.json();
+//      console.log(dados[0].name)
+//  }
+// getDate();
+
+// .then()
+// const getDate2 = () => {
+//     fetch(url)
+//         .then(response => response.json())
+//         .then(resp =>console.log(resp))
+//     }
+
+// getDate2();
+
+
+//1.fazer fetch de "https://jsonplaceholder.typicode.com/users"
+//2.salvar num array tarefas
+//3.consolar o array
+
+//4.crir novo array com as tarefas do userId 1 - utilizar filter
+//5.exibir no console
+
+
+
+const loading = document.querySelector("#loading");
+const todosContainer = document.querySelector("#todosContainer");
+
+
+const getTodos = async() => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+    const tarefas =  await response.json();
+    loading.classList.add('hide');
+
+    const tarefasUserId1 = tarefas.filter(tarefa => tarefa.userId === 1)
+    console.log(tarefasUserId1)
+
+    tarefasUserId1.forEach(tarefa => {
+        const todoContainer = document.createElement('div');
+        const titulo = document.createElement('h2');
+        const completed = document.createElement('p');
+        titulo.innerText = tarefa.title;
+        completed.innerText = tarefa.completed;
+        todoContainer.appendChild(titulo);
+        todoContainer.appendChild(completed);
+        todosContainer.appendChild(todoContainer);
+    })
+
+}
+
+getTodos();
